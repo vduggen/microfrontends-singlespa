@@ -1,7 +1,6 @@
 {
-  "name": "@mfu/student",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vldugen-student",
+  "version": "0.0.1",
   "scripts": {
     "serve": "vue-cli-service serve --port 8082",
     "build": "vue-cli-service build",

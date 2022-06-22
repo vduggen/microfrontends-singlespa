@@ -1,12 +1,12 @@
 {
-  "name": "@mfu/root-config",
+  "name": "vlduggen-root-config",
+  "version": "0.0.1",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "prepare": "husky install",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production"
   },

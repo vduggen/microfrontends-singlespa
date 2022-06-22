@@ -1,5 +1,6 @@
 {
-  "name": "@mfu/configs",
+  "name": "vlduggen-configs",
+  "version": "0.0.1",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",

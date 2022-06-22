@@ -27,6 +27,7 @@ module.exports = (webpackConfigEnv, argv) => {
     devServer: {
       headers: {
         'Content-Security-Policy': 'connect-src https: localhost:* ws://localhost:* ws://192.168.15.8:*',
+        'Access-Control-Allow-Origin': "*",
       }
     }
   });
