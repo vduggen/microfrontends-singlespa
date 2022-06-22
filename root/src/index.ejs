@@ -46,6 +46,8 @@
 
   <% if (isLocal) { %>
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:  localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:* ws://192.168.15.8:*; style-src 'unsafe-inline' https:; object-src 'none';">
+  <% } %>
+  
   <script type="systemjs-importmap">
     {
       "imports": {
@@ -56,7 +58,6 @@
       }
     }
   </script>
-  <% } %>
 
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
@@ -80,7 +81,7 @@
   <main></main>
   <script>
     System.import('@mfu/configs');
-    // System.import('@mfu/root-config');
+    System.import('@mfu/root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
